@@ -26,6 +26,9 @@ AwsProductApiClient api = new AwsProductApiClient(new ProductApiConnectionInfo
 ```
     AwsCart cart = api.CreateCart(new CartItem { Asin = "B0071YIFJ6" }, new CartItem { Asin = "B001H1SVO8" });
 ```
+### Packaging
+*	Update the package version on src/NKCraddock.AmazonItemLookup/NKCraddock.AmazonItemLookup.dll.nuspec
+*	Execute the file src/CreatePackage.bat
 
 ### Colaborators
 [Marcos Placona](www.placona.co.uk) - Twilio
@@ -34,3 +37,4 @@ AwsProductApiClient api = new AwsProductApiClient(new ProductApiConnectionInfo
 *   Add support for CreateCart
 *   Add support for localized Amazon websites
 *   Create Nuget package
+*   Add nuget creation files
